@@ -1,11 +1,10 @@
-name: 🚀 Run SMSBoom in Action# 触发 Action 的条件
+name: 🚀 Run SMSBoom in Action
 on:  
   schedule:
-   - cron: '30 0 * * *'
-   - cron: '30 6 * * *'
-   - cron: '01 14 * * *'
-   - cron: '30 18 * * *'
-   
+    - cron: '30 0 * * *'
+    - cron: '30 6 * * *'
+    - cron: '17 14 * * *'
+    - cron: '30 18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
