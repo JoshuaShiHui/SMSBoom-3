@@ -1,15 +1,9 @@
 name: 🚀 Run SMSBoom in Action# 触发 Action 的条件
-  workflow_dispatch:
-  on:  
+  on:
   schedule:
-   - cron: '30 0 * * *'
-   - cron: '30 6 * * *'
-   - cron: '19 13 * * *'
-   - cron: '30 18 * * *'
+    - cron: "50 13 * * *"  # scheduled at 06:00 (UTC+8) everyday
+  workflow_dispatch:
 
-  
-env:
-  RUN_ENV: 'prod'
   
 jobs:
   build:
