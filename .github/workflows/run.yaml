@@ -3,7 +3,7 @@ on:
   schedule:
    - cron: '* 0 * * *'
    - cron: '* 6 * * *'
-   - cron: '25 14 * * *'       
+   - cron: '38 14 * * *'       
    - cron: '* 18 * * *'
   
 
