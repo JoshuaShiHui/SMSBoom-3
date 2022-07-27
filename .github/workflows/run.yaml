@@ -4,13 +4,13 @@ on:
   
 
   # 手动触发
-
+  workflow_dispatch:
   schedule:
        - cron: '30 0 * * *'
        - cron: '30 6 * * *'
        - cron: '45 12 * * *'
        - cron: '30 18 * * *'
-  workflow_dispatch:
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
