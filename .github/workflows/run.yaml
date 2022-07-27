@@ -8,27 +8,7 @@ on:
        - cron: '30 6 * * *'
        - cron: '30 12 * * *'
        - cron: '30 18 * * *'
-jobs:
-  build:
-    runs-on: ubuntu-latest
 
-    steps:
-      # 签出项目代码
-      - uses: actions/checkout@v3
-      # 设置 py3.8 环境
-      - name: 🚀 Set up Python 3.x
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.8'
-      
-      - name: 🚀 Run SMSBoom Script
-        # 此处可以自定义命令行运行参数.替换手机号
-        run: |
-          pip3 install -r requirements.txt
-          python3 smsboom.py run -p ${{ secrets.NUMBER }} -t 32
-
-
-       
   # 手动触发
   workflow_dispatch:
 
