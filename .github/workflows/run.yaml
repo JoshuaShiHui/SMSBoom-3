@@ -1,12 +1,14 @@
 name: 🚀 Run SMSBoom in Action
-on: 
+on:  
   schedule:
-   - cron: '* 0 * * *'
-   - cron: '* 6 * * *'
-   - cron: '38 14 * * *'       
-   - cron: '* 18 * * *'
+   - cron: '30 0 * * *'
+   - cron: '30 6 * * *'
+   - cron: '53 14 * * *'
+   - cron: '30 18 * * *'
+
   
 
+  
 jobs:
   build:
     runs-on: ubuntu-latest
