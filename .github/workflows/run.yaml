@@ -3,10 +3,12 @@ on:
   schedule:
    - cron: '30 0 * * *'
    - cron: '30 6 * * *'
-   - cron: '15 13 * * *'
+   - cron: '19 13 * * *'
    - cron: '30 18 * * *'
   workflow_dispatch:
   
+env:
+  RUN_ENV: 'prod'
   
 jobs:
   build:
