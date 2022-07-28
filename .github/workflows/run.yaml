@@ -5,6 +5,7 @@ on:
    - cron: "21 11 * * *"  
    - cron: "37 17 * * *"
    - cron: "27 23 * * *"  
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
