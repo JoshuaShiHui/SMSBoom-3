@@ -1,10 +1,10 @@
 name: 🚀 Run SMSBoom in Action
 on:  
   schedule:
-   - cron: "32 5 * * *"
-   - cron: "21 11 * * *"  
-   - cron: "37 17 * * *"
-   - cron: "27 23 * * *"  
+   - cron: "32 2 * * *"
+   - cron: "21 8 * * *"  
+   - cron: "37 14 * * *"
+   - cron: "27 20 * * *"  
   workflow_dispatch:
 jobs:
   build:
